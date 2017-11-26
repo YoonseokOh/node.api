@@ -1,0 +1,30 @@
+{
+  "cfg": {
+    "server": {
+      "port": 3030
+    },
+    "fetch": {
+      "jsonOption": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "timeout": 30000, // req/res timeout in ms, it resets on redirect. 0 to disable (OS limit applies)
+        "compress": true  // support gzip/deflate content encoding. false to disable
+      }
+    },
+    "parameters": {
+      "time": {
+        "month2msec": 86400000
+      }
+    },
+    "token": {
+      "session": "webSession",
+      "user": "webUser"
+    },
+    "mode": {
+    },
+    "debug": {
+    },
+    "env": "production"
+  }
+}

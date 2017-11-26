@@ -1,0 +1,9 @@
+{
+  "name": "API Document",
+  "version": "0.0.1",
+  "description": "RESTful API Document",
+  "apidoc": {
+    "title": "API Document",
+    "url": "api.yoonseokoh.com"
+  }
+}
