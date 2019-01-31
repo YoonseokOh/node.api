@@ -18,7 +18,7 @@ const knex = require('knex')({
     port: connectInfo.port,
     user: connectInfo.user,
     password: connectInfo.password,
-    database: 'sample',
+    database: 'test',
     dateStrings : true
   },
   pool: {

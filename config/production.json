@@ -4,10 +4,10 @@
     "mysql": {
       "connect": {
         "connectionLimit": 1, // DB setting
-        "host": "", // DB IP
+        "host": "localhost", // DB IP
         "port" : 3306, // DB port
-        "user" : "", // DB ID
-        "password" : "" // DB password
+        "user" : "root", // DB ID
+        "password" : "password" // DB password
       }
     },
     "env": "development"
