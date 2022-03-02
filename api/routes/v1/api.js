@@ -12,7 +12,7 @@
 
 'use strict';
 
-const fetch = require('node-fetch');
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const querystring = require('querystring');
 const _ = require('lodash');
 
