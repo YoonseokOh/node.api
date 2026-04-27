@@ -6,15 +6,16 @@
     "start": "node ./bin/api"
   },
   "dependencies": {
-    "body-parser": "^1.19.2",
-    "config": "^3.3.7",
-    "cookie-parser": "^1.4.6",
-    "express": "^4.17.3",
-    "knex": "^1.0.3",
-    "lodash": "^4.17.21",
-    "moment": "^2.29.1",
+    "body-parser": "^2.2.2",
+    "config": "^4.4.1",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "knex": "^3.2.9",
+    "lodash": "^4.18.1",
+    "moment": "^2.30.1",
     "mysql": "^2.18.1",
-    "node-fetch": "^3.2.1",
+    "node-fetch": "^3.3.2",
     "uid-safe": "^2.1.5"
   }
 }

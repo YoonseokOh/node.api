@@ -26,8 +26,13 @@ module.exports = function(express) {
     // User token for tracking log (including guest)
     if (!req.cookies[cfg.token.session]) {
       const userToken = uid.sync(24);
+      const isProduction = process.env.NODE_ENV === 'production' || cfg.env === 'production';
+
       res.cookie(cfg.token.session, userToken, {
-        maxAge: 1 * cfg.parameters.time.month2msec
+        httpOnly: true,
+        maxAge: 1 * cfg.parameters.time.month2msec,
+        sameSite: 'lax',
+        secure: isProduction
       });
     }
     next();
